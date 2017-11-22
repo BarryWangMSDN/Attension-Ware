@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using AttWare.View;
 
 // https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x804 上介绍了“空白页”项模板
 
@@ -25,6 +26,17 @@ namespace AttWare
         public MainPage()
         {
             this.InitializeComponent();
+            ContentFrame.Navigate(typeof(Home));
+        }
+
+        private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            switch (args.InvokedItem)
+            {
+                case "Home":
+                    ContentFrame.Navigate(typeof(Home));
+                    break;
+            }
         }
     }
 }
