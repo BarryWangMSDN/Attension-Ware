@@ -11,6 +11,7 @@
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition Height="0.5*"/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -23,32 +24,48 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Text="9:00"/>
-            <Border BorderThickness="0.1" Grid.Row="0" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="1" Text="10:00"/>
-            <Border BorderThickness="0.1" Grid.Row="1" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="2" Text="11:00"/>
-            <Border BorderThickness="0.1" Grid.Row="2" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="3" Text="12:00"/>
-            <Border BorderThickness="0.1" Grid.Row="3" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="4" Text="13:00"/>
-            <Border BorderThickness="0.1" Grid.Row="4" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="5" Text="14:00"/>
-            <Border BorderThickness="0.1" Grid.Row="5" Grid.ColumnSpan="5"  BorderBrush="Black"/>
-            <TextBlock Grid.Row="6" Text="15:00"/>
-            <Border BorderThickness="0.1" Grid.Row="6" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="7" Text="16:00"/>
-            <Border BorderThickness="0.1" Grid.Row="7" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="8" Text="17:00"/>
-            <Border BorderThickness="0.1" Grid.Row="8" Grid.ColumnSpan="5" BorderBrush="Black"/>
-            <TextBlock Grid.Row="9" Text="18:00"/>
-            <Border BorderThickness="0.1" Grid.Row="9" Grid.ColumnSpan="5" BorderBrush="Black"/>
+            <TextBlock Grid.Row="1" Text="9:00"/>
+            <TextBlock Grid.Row="2" Text="10:00"/>
+            <TextBlock Grid.Row="3" Text="11:00"/>
+            <TextBlock Grid.Row="4" Text="12:00"/>
+            <TextBlock Grid.Row="5" Text="13:00"/>
+            <TextBlock Grid.Row="6" Text="14:00"/>
+            <TextBlock Grid.Row="7" Text="15:00"/>
+            <TextBlock Grid.Row="8" Text="16:00"/>
+            <TextBlock Grid.Row="9" Text="17:00"/>
+            <TextBlock Grid.Row="10" Text="18:00"/>
+
+            <TextBlock Grid.Column="1" Text="Mon" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="2" Text="Tue" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="3" Text="Wed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="4" Text="Thu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="5" Text="Fri" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <Border BorderThickness="0.1" Grid.Row="1" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="2" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="3" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="4" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="5" Grid.ColumnSpan="6"  BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="6" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="7" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="8" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="9" Grid.ColumnSpan="6" BorderBrush="Black"/>
+            <Border BorderThickness="0.1" Grid.Row="10" Grid.ColumnSpan="6" BorderBrush="Black"/>
+
+            <Border BorderThickness="0.1" BorderBrush="Black" Grid.Column="0" Grid.RowSpan="11"/>
+            <Border BorderThickness="0.1" BorderBrush="Black" Grid.Column="1" Grid.RowSpan="11"/>
+            <Border BorderThickness="0.1" BorderBrush="Black" Grid.Column="2" Grid.RowSpan="11"/>
+            <Border BorderThickness="0.1" BorderBrush="Black" Grid.Column="3" Grid.RowSpan="11"/>
+            <Border BorderThickness="0.1" BorderBrush="Black" Grid.Column="4" Grid.RowSpan="11"/>
+            <Border BorderThickness="0.1" BorderBrush="Black" Grid.Column="5" Grid.RowSpan="11"/>
+            <Border BorderThickness="0.1" BorderBrush="Black" Grid.Column="6" Grid.RowSpan="11"/>
         </Grid>
     </Grid>
 </UserControl>
