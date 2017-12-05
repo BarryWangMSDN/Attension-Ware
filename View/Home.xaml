@@ -11,10 +11,10 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.3*"/>
+            <RowDefinition Height="0.4*"/>
             <RowDefinition Height="0.7*"/>
         </Grid.RowDefinitions>
-        <CalendarView Grid.Row="0" HorizontalAlignment="Left" HorizontalDayItemAlignment="Center" MaxWidth="598" MaxHeight="300"/>
+        
         <control:WeekView Grid.Row="1"/>
       
        

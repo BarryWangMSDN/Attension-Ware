@@ -23,5 +23,33 @@ namespace AttWare.Control
         {
             this.InitializeComponent();
         }
+
+
+
+        public int WeekDayIndex
+        {
+            get { return (int)GetValue(WeekDayIndexProperty); }
+            set { SetValue(WeekDayIndexProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for WeekDayIndex.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty WeekDayIndexProperty =
+            DependencyProperty.Register("WeekDayIndex", typeof(int), typeof(WeekView), new PropertyMetadata(0));
+
+
+
+        public int TimeLineIndex
+        {
+            get { return (int)GetValue(TimeLineIndexProperty); }
+            set { SetValue(TimeLineIndexProperty, value); }
+        }
+
+        // Using a DependencyProperty as the backing store for TimeLineIndex.  This enables animation, styling, binding, etc...
+        public static readonly DependencyProperty TimeLineIndexProperty =
+            DependencyProperty.Register("TimeLineIndex", typeof(int), typeof(WeekView), new PropertyMetadata(0));
+
+
+
+
     }
 }
