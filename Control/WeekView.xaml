@@ -8,6 +8,9 @@
     mc:Ignorable="d"
     d:DesignHeight="300"
     d:DesignWidth="400">
+    <UserControl.Resources>
+       
+    </UserControl.Resources>
     <Grid>
         <!--<Grid>
             <Grid.RowDefinitions>
@@ -84,18 +87,37 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="TimeLine" Grid.Row="0"/>
-        <TextBlock Grid.Row="1" Text="9 AM"/>
-        <TextBlock Grid.Row="2" Text="10"/>
-        <TextBlock Grid.Row="3" Text="11"/>
-        <TextBlock Grid.Row="4" Text="12"/>
-        <TextBlock Grid.Row="5" Text="1 PM"/>
-        <TextBlock Grid.Row="6" Text="2"/>
-        <TextBlock Grid.Row="7" Text="3"/>
-        <TextBlock Grid.Row="8" Text="4"/>
-        <TextBlock Grid.Row="9" Text="5"/>
-        <TextBlock Grid.Row="10" Text="6"/>
-
+        <Border BorderBrush="Black" BorderThickness="0.4" Grid.RowSpan="11"/>
+        <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="1"/>
+        <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="3"/>
+        <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="5"/>
+        <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="7"/>
+        <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="9"/>
+        <TextBlock Text="TimeLine" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="9 AM"/>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="10"/>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Text="11"/>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Text="12"/>
+        <TextBlock Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Text="1 PM"/>
+        <TextBlock Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Text="2"/>
+        <TextBlock Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Text="3"/>
+        <TextBlock Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Text="4"/>
+        <TextBlock Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center" Text="5"/>
+        <TextBlock Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" Text="6"/>
+        <Grid Grid.Column="1" Background="{ThemeResource SystemBaseLowColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Mon" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="1" Text="Tue" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="2" Text="Wen" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="3" Text="Thu" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Grid.Column="4" Text="Fri" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Grid>
         
     </Grid>
 </UserControl>
