@@ -93,17 +93,17 @@
         <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="5"/>
         <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="7"/>
         <Border BorderBrush="Black" BorderThickness="0.4" Grid.Row="9"/>
-        <TextBlock Text="TimeLine" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0"/>
-        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="9 AM"/>
-        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="10"/>
-        <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Text="11"/>
-        <TextBlock Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Text="12"/>
-        <TextBlock Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Center" Text="1 PM"/>
-        <TextBlock Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center" Text="2"/>
-        <TextBlock Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Center" Text="3"/>
-        <TextBlock Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Center" Text="4"/>
-        <TextBlock Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Center" Text="5"/>
-        <TextBlock Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Center" Text="6"/>
+        <TextBlock Text="TimeLine" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="0"/>
+        <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Text="9 AM"/>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Text="10"/>
+        <TextBlock Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Top" Text="11"/>
+        <TextBlock Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Top" Text="12"/>
+        <TextBlock Grid.Row="5" HorizontalAlignment="Center" VerticalAlignment="Top" Text="1 PM"/>
+        <TextBlock Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Top" Text="2"/>
+        <TextBlock Grid.Row="7" HorizontalAlignment="Center" VerticalAlignment="Top" Text="3"/>
+        <TextBlock Grid.Row="8" HorizontalAlignment="Center" VerticalAlignment="Top" Text="4"/>
+        <TextBlock Grid.Row="9" HorizontalAlignment="Center" VerticalAlignment="Top" Text="5"/>
+        <TextBlock Grid.Row="10" HorizontalAlignment="Center" VerticalAlignment="Top" Text="6"/>
         <Grid Grid.Column="1" Background="{ThemeResource SystemBaseLowColor}">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -118,6 +118,47 @@
             <TextBlock Grid.Column="3" Text="Thu" HorizontalAlignment="Center" VerticalAlignment="Center" />
             <TextBlock Grid.Column="4" Text="Fri" HorizontalAlignment="Center" VerticalAlignment="Center" />
         </Grid>
-        
+        <!--<ListView  Grid.Row="1" Grid.Column="1" Grid.RowSpan="10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.1*"/>
+                            <ColumnDefinition Width="0.4*"/>
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Fill="Red" Width="8"></Rectangle>
+                        <TextBlock Text="{Binding}" Grid.Column="1"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid MaximumRowsOrColumns="10" Orientation="Vertical"/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+            <ListView.Items>
+                <x:String>One</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>One</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+                <x:String>Two</x:String>
+               
+                <x:String>Two</x:String>
+            </ListView.Items>
+
+        </ListView>-->
     </Grid>
 </UserControl>
